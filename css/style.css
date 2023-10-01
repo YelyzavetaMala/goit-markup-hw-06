@@ -36,7 +36,8 @@ button {
 
 
 .section {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .section-title {
@@ -118,6 +119,13 @@ button {
     color: #2E2F42;
 }
 
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 120px;
+    }
+}
+
+
 .nav-list {
     display: flex;
     justify-content: center;
@@ -181,8 +189,13 @@ button {
 
 
 .address-list {
-    display: flex;
     gap: 40px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .address-list {
+    display: flex;
+    }
 }
 
 .address {
@@ -190,6 +203,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
 }
 
 .address:hover,
@@ -237,7 +253,7 @@ button {
 
 @media only screen and (min-width: 768px) {
     .hero-section {
-        height: 600px;
+        height: 436px;
         padding: 112px 0;
         max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab.jpg);
@@ -278,21 +294,6 @@ button {
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-    .hero-title {
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        max-width: 496px;
-    }
-    .hero-button {
-        margin: 48px auto 0;
-    } 
-}
-
-
-
-
 .hero-button {
     color: #FFF;
     letter-spacing: 0.04em;
@@ -316,20 +317,31 @@ button {
     background-color: #404BBF;
 }
 
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+    }
 
+    .hero-button {
+        margin: 36px auto 0;
+    }
+}
 
 .advantage-list { 
-    gap: 24px;
     flex-wrap: wrap;
     text-align: center;
+    display: flex;
 }
 
 .advantage-item {
     flex-basis: 100%;
 }
 
-.advantage-item:not(:first-child) {
-    margin-top: 72px;
+.advantage-item:not(:last-child) {
+    margin-bottom: 72px;
 }
 
 .advantage-title {
@@ -344,10 +356,53 @@ button {
 
 .advantage-text {
     line-height: 1.5;
+    text-align: center;
     letter-spacing: 0.02em;
     font-weight: 500;
     width: 288px;
     text-align: left;
+}
+
+
+.advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    height: 112px;
+    display: none;
+}  
+
+@media only screen and (min-width: 768px) {
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .advantage-icon {
+        
+    } 
+    .advantage-list {
+        flex-basis: calc((100% - 24px) / 2);
+        gap: 72px 24px;
+    }
+    .advantage-item {
+        margin-bottom: 0;
+        max-width: 356px;
+        max-height: 120px;
+    }
+    .advantage-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .advantage-title {
+        text-align: left;
+    }
+    .advantage-text {
+        width: 356px;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -365,25 +420,6 @@ button {
     }
 }
 
-
-.advantage-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    border: 1px solid #8E8F99;
-    background: #F4F4FD;
-    height: 112px;
-}  
-
-@media only screen and (max-width: 768px) {
-    .advantage-icon {
-        display: none;
-    }
-}
-
-
 .team-section {
     background-color: #F4F4FD;
 }
@@ -395,7 +431,7 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .team-list {
@@ -473,7 +509,27 @@ button {
     background-color: #404BBF;
 }
 
+@media only screen and (min-width: 768px) {
 
+    .team-section .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .team-list {
+        gap: 64px 24px;
+        margin: 0 108px;
+    }
+
+    .team-list-item {
+        flex-basis: calc((100% - 24px) / 2);
+        
+    }
+
+    .team-list-content {
+        padding: 32px 0;
+    }
+}
 
 
 
@@ -562,6 +618,24 @@ button {
  0px 1px 1px 0px rgba(46, 47, 66, 0.16),
  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        gap: 72px 24px;
+        margin: 0;
+    }
+        
+    .portfolio-list-item {
+        flex-basis: calc((100% - 24px) / 2);
+        gap: 0 24px;
+    }
+    .product-image {
+        width: 356px;
+        height: 300px;
+    }
+}
+
+
 
 .footer {
     background-color: #2E2F42;
@@ -654,11 +728,6 @@ button {
 }
 
 
-
-.footer-contact {
-    
-}
-
 .footer-form {
     flex-direction: row;
     gap: 24px;
@@ -669,21 +738,6 @@ button {
     width: 100%;
     max-width: 288px;
 }
-
-@media only screen and (min-width: 1440px) {
-    .footer-label {
-        width: 100%;
-        max-width: 264px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .footer-label {
-        width: 100%;
-        max-width: 264px;
-    }
-}
-
 
 
 .footer-input {
@@ -722,15 +776,10 @@ button {
 }
 
 .footer-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
     background: #4D5AE5;
     color: #FFF;
     letter-spacing: 0.04em;
     cursor: pointer;
-    padding: 8px 24px;
     border-radius: 4px;
     font-weight: 500;
     line-height: 1.5;
@@ -738,8 +787,56 @@ button {
     height: 40px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 16px;
+    display: block; 
+    margin: 16px auto;
+    
+    
 }
+
+@media only screen and (min-width: 768px) {
+    .logo-footer {
+        justify-content: left;
+    }
+    .footer-label {
+        width: 100%;
+        max-width: 264px;
+    }
+
+    .footer-inner {
+        padding: 0 108px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        margin-bottom: 0;
+    }
+
+    .footer-socials {
+        margin-left: 24px;
+    }
+
+    .content-socials {
+        justify-content: left;
+    }
+    .footer-button {
+       margin: 0;
+       margin-left: 24px;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .footer-label {
+        width: 100%;
+        max-width: 264px;
+    }
+}
+
 
 .backdrop {
     position: fixed;
@@ -1090,7 +1187,6 @@ button {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 32px;
     }
 
     .hero-section {
@@ -1099,22 +1195,10 @@ button {
 
     .advantage-item {
         flex-basis: calc((100% - 24px) / 2);
-    }
-
-    .team-list {
-        gap: 72px 24px;
-    }
-
-    .team-list-item {
-        flex-basis: calc((100% - 24px) / 2);
-        gap: 24px;
-    }
-
-    .portfolio-list-item {
-        flex-basis: calc((100% - 24px) / 2);
         gap: 24px;
     }
 }
+    
 
 
 
