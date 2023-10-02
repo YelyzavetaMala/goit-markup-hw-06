@@ -431,7 +431,7 @@ button {
 @media only screen and (min-width: 1440px) {
     .section {
         padding-top: 120px;
-        padding-bottom: 220px;
+        padding-bottom: 120px;
     
     }
     .advantage-item {
@@ -589,9 +589,7 @@ button {
     .team-list {
         gap: 24px;
     }
-    .team-section {
-        padding-bottom: 290px;
-    }
+    
 }
 
 
