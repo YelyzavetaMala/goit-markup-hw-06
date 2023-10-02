@@ -431,7 +431,8 @@ button {
 @media only screen and (min-width: 1440px) {
     .section {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 220px;
+    
     }
     .advantage-item {
         flex-basis: calc((100% - 72px) / 4);
@@ -566,6 +567,32 @@ button {
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    .container {
+        margin-left: 156px;
+        margin-right: 156px;
+    }
+    .team-list {
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    .team-list-item {
+        height: 100%;
+        max-height: 260px;
+    }
+    .team-list-content {
+        padding: 0;
+    }
+    .team-members {
+        margin: 8px 0;
+    }
+    .team-list {
+        gap: 24px;
+    }
+    .team-section {
+        padding-bottom: 290px;
+    }
+}
 
 
 .portfolio-list{
@@ -667,6 +694,20 @@ button {
     .product-image {
         width: 356px;
         height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .portfolio-list-item {
+        flex-basis: calc((100% - 48px) / 3);
+        gap: 0 24px;
+    }
+    .portfolio-list {
+        gap: 48px 24px;
+    }
+
+    .portfolio-section {
+        padding-bottom: 120px;
     }
 }
 
@@ -836,7 +877,9 @@ button {
         width: 100%;
         max-width: 264px;
     }
-
+    .footer-input {
+        max-width: 264px;
+    }
     .footer-inner {
         padding: 0 108px;
         display: flex;
@@ -856,7 +899,6 @@ button {
     }
     .footer-button {
        margin: 0;
-       margin-left: 24px;
     }
     .footer-form {
         display: flex;
@@ -866,11 +908,24 @@ button {
 
 
 @media only screen and (min-width: 1440px) {
+    .footer-content {
+        width: 264px;
+    }
     .footer-label {
         width: 100%;
         max-width: 264px;
     }
-}
+    .footer-socials {
+        margin-left: 0;
+    }
+    .footer-inner {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .footer-input {
+        max-width: 264px;
+    }
+}   
 
 
 .backdrop {
@@ -1238,11 +1293,11 @@ button {
 
 
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
     .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
+        max-width: 1440px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .hero-section {
@@ -1253,17 +1308,8 @@ button {
         flex-basis: calc((100% - 72px) / 4);
     }
 
-    .team-list {
-        gap: 24px;
-    }
-
     .team-list-item {
         flex-basis: calc((100% - 72px) / 4);
-        gap: 24px;
-    }
-
-    .portfolio-list-item {
-        flex-basis: calc((100% - 48px) / 3);
         gap: 24px;
     }
 
