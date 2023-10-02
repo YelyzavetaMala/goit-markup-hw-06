@@ -414,7 +414,6 @@ button {
     .advantage-item {
         margin-bottom: 0;
         max-width: 356px;
-        max-height: 120px;
     }
     .advantage-item:not(:last-child) {
         margin-bottom: 0;
@@ -1291,7 +1290,7 @@ button {
 
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1440px;
         padding-left: 0;
