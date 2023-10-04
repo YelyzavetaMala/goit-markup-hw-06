@@ -947,7 +947,7 @@ button {
 }
 
 
-/* закоментовано 
+/* закоментовано
 .is-open {
     opacity: 1;
     visibility: visible;
@@ -1175,7 +1175,7 @@ button {
 @media only screen and (min-width: 768px) {
     .modal {
         max-width: 408px;
-        padding: 72px 24px 24px 24px;
+        width: calc(100% - 36px);
         min-height: 584px;
     }
         .modal-checkbox {
